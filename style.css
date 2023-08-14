@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --first-color:rgba(49, 43, 177, 0.795);
+  --second-color:#050505e5;
+  
+
+    --pagesize-width:50vw;
+    --name:1.8rem;
+    --job-title:1.1rem;
+    --pagesize-height:160vh;
+    --headbox-height:16.8vh;
+    --font-size: .9rem;
+    --main-width:68vw;
+    --font-bit:1rem;
+    --heading-size: 1.3rem;
+    --line-size: 1.2rem;
+    --white: #ffffff;
+    --black: #000000c8;
+    --pure-black:#000;
+    --bg-color-1: #6d59de;
+    --bg-color-2:#71d22271;
+    --shadow-color:0px 3px 8px -1px rgba(0,0,0,0.75);
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: var(--first-color);
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--first-color);
+}
+ 
+
+  /*scroll to bottom*/
+.srcroll-button a{
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    color: var(--second-color);
+    background: var(--first-color);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    /* display: none; */
+    z-index: 89;
+    transition: all 0.6s ease;
+}
+/* ==========nav bar ========================*/
+
+nav{
+    /* background-color: #425f1a26; */
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    padding: 2rem 0;
+    transition: all 0.3s ease;
+}
+/* nav.sticky{
+    background: var(--first-color);
+    padding: 1rem 0;
+} */
+ .navbar{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  
+}
+nav .navbar .logo a{
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--first-color);
+
+
+}
+/* nav.sticky .navbar .logo a{
+    color: var(--second-color);
+
+} */
+ .menu{
+    display: flex;
+    position: relative;
+    z-index: 23;
+  
+}
+.show{
+    display: none;
+}
+nav .navbar .menu li{
+    list-style: none;
+    margin: 0 8px;
+}
+nav .navbar .menu  a{
+   text-decoration: none;
+   color:var(--white);
+   font-size: .8rem;
+   font-weight: 400;
+   padding: 6px 0;
+   transition: all 0.3s ease;
+   text-transform: capitalize;
+}
+nav .navbar .menu  a:hover{
+    
+    color: var(--first-color);
+}
+/* nav.sticky .menu a{
+    color: var(--second-color);
+} 
+nav.sticky .menu a:hover{
+    color: var(--black-color);
+} */
+/* .navbar .media-icons a{
+    color: var(--first-color);
+    font-size: 2rem;
+    margin: 6px;
+} */
+/* .navbar.sticky .media-icons a{
+    color: var(--second-color);
+} */
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+    position: absolute;
+    color:var(--white);
+    right:100px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+
+}
+nav .menu-btn{
+    color: var(--first-color);
+
+}
+nav.sticky .menu-btn{
+    color: var(--second-color);
+}
+.navbar .menu .menu-btn{
+    color: var(--second-color);
+}
+
+
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.flex-side{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+/* .page1 .box2flex{
+    /* flex-direction: column;
+    align-items: stretch; Stretch both sections to full width  */
+
+.box2flex{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.main{
+    padding: 4rem 8rem;
+    position: relative;
+    min-width: var(--main-width);
+    height: auto;
+
+    background: var(--bg-color-2); 
+}
+/* .mainbox{
+    align-self: stretch; height: 2423px; position: relative;
+} */
+.pagesize{
+    box-shadow:var(--shadow-color) ;
+    margin: auto;
+    padding: 1rem 1.1rem;
+    position: relative;
+    background-color: var(--white);
+    /* width: 735px;
+    height: 1180px; */
+    width: var(--pagesize-width);
+    height: var(--pagesize-height);
+}
+.page2{
+    /* margin-left: 4rem; */
+    margin-top: 3rem;
+}
+.page1 .headbox{
+    background-color: var(--bg-color-1);
+    height: var(--headbox-height);
+    margin-bottom: 1.5rem;
+    padding: .5rem 1rem;
+
+}
+.page1 .headbox .content{
+    /* background-color: pink; */
+    line-height: 2.3rem;
+    color: var(--white);
+
+}
+.headbox{
+    border-radius: .2rem;
+}
+.content .name{
+    
+    font-size: var(--name);
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+
+}
+.jobtit{  font-size: var(--job-title);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ============================reight side page1 ===========================*/
+.right{
+    /* background-color: rgb(187, 255, 0); */
+    margin-left: .7rem;
+    min-width: 16vw;
+   
+    padding: .3rem .6rem;
+    height: auto;
+    flex: 1;
+   
+}
+.threebox{
+    height: auto;
+/* background: #3a7b32; */
+}
+/* -------------------contact section -------------------------*/
+
+.contact-title{
+    font-size: var(--font-bit);
+    font-weight: 500;
+    color:var(--pure-black);
+}
+.value-info{
+    font-size: var(--font-size);
+
+}
+.value-info a{
+    color: var(--black);
+
+}
+
+.edu-box{
+    margin-top: .9rem;
+    margin-bottom: .9rem;
+    
+}
+
+.skills-dot{
+    margin-left: 1rem;
+    /* background-color: #606060; */
+}
+.skills-dot li{
+    margin-top: .8rem;
+}
+
+
+
+/* ============================left side page1 ===========================*/
+.left{
+  
+    /* background-color: aqua; */
+    flex: 3;
+    height: auto;
+    padding: .5rem .6rem;
+}
+.heading2{
+    margin-top: 1rem;
+    margin-bottom: .8rem;
+}
+.headcontent{
+    color: var(--bg-color-1);
+    font-size: var(--heading-size);
+    font-weight: 500;
+    
+    text-transform: uppercase;
+}
+
+.contentbox{
+    margin-bottom: 1rem;
+    
+}
+.workpara{
+    margin-left: .6rem;
+}
+
+.para{
+    color: var(--black);
+    font-size: var(--font-size);
+    font-weight: 400;
+    line-height: var(--line-size);
+   
+}
+
+
+/* -----------------work Experience section=---------- */
+
+.workInfo{
+/* background-color: blue; */
+
+margin-top: 2rem;
+
+}
+.company-info{
+    /* background-color: rgb(255, 0, 0); */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6rem;
+}
+.company-name{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.work-name{
+    color: var(--bg-color-1);
+    font-size: 1rem;
+}
+.workpara li{
+    margin-top: 1rem;
+}
+
+
+/* ==========page 2 ================================================ */
+.project-page{
+    width: 90%;
+}
+
+.projectpara{
+    margin-left: .7rem;
+}
+.projectpara li{
+    margin-top: 1rem;
+}
+.page2project{
+    padding: .6rem;
+}
+
+
+.project-2{
+    margin-top: 2rem;
+}
+
+/*========================================== resposive code========================== */
+
+
+
+/* Media query for screens with width up to 375px */
+@media (max-width: 376px) {
+    /* Styles for screens up to 375px */
+
+
+    .srcroll-button a{
+        padding: .3rem .6rem;
+        font-size: .9rem;
+    }
+    :root {
+        --pagesize-width:90vw;
+        --name:1.3rem;
+        --job-title:.8rem;
+        --pagesize-height:auto;
+        --headbox-height:auto;
+        --font-size: .7rem;
+        --main-width:100vw;
+        --font-bit:.8rem;
+        --heading-size: 1.1rem;
+        --line-size: 1.1rem;
+        --white: #ffffff;
+       
+      }
+      .box2flex{
+       
+        flex-direction: column-reverse;
+    }
+    .main
+    {
+      padding: 2.8rem .6rem;
+    }
+    .pagesize{
+        box-shadow:none ;
+
+      padding: 1.6rem 1.1rem;
+    }
+    .skills-dot li{
+      margin-top: .4rem;
+  }
+   .page2{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .jobtit{
+    letter-spacing: 1px;
+  }
+  nav .navbar{
+    width: 90%;
+}
+nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top:0;
+    background: var(--first-color);
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+.navbar.active .menu{
+    left: 0;
+
+}
+nav .navbar .menu a{
+    font-size: 23px;
+    display: block;
+  
+    margin: 10px 0;
+}
+.show{
+    display: flex;
+}
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+    display: block;
+    right: 40px;
+
+}
+.srcroll-button a{
+    right: 40px;
+}
+
+  
+  }
+
+  @media (min-width: 377px) and (max-width: 499px) {
+
+    .srcroll-button a{
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+    :root {
+        --pagesize-width:90vw;
+        --name:1.5rem;
+        --job-title:.9rem;
+        --pagesize-height:auto;
+        --headbox-height:auto;
+        --font-size: .7rem;
+        --main-width:100vw;
+        --font-bit:.8rem;
+        --heading-size: 1.1rem;
+        --line-size: 1.1rem;
+        --white: #ffffff;
+       
+      }
+
+    .box2flex{
+       
+        flex-direction: column-reverse;
+    }
+    .main
+    {
+      padding: 2.5rem 1rem;
+    }
+    .pagesize{
+        box-shadow:none ;
+
+      padding: 1.6rem 1.1rem;
+    }
+    .skills-dot li{
+      margin-top: .4rem;
+  }.page2{
+    margin-top: 0;
+  }
+  .jobtit{
+    letter-spacing: 1px;
+  }
+  
+  .page1{
+    margin-top: 2rem;
+  }
+
+  nav .navbar{
+    width: 90%;
+}
+nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top:0;
+    background: var(--first-color);
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+.navbar.active .menu{
+    left: 0;
+
+}
+nav .navbar .menu a{
+    font-size: 23px;
+    display: block;
+    color:var(--white);
+    margin: 10px 0;
+}
+.show{
+    display: flex;
+}
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+    display: block;
+    right: 40px;
+
+}
+.srcroll-button a{
+    right: 40px;
+}
+
+  }
+
+  @media (min-width: 500px) and (max-width: 667px) {
+    /* Styles for screens from 376px to 786px */
+    :root {
+        --pagesize-width:90vw;
+        --name:1.5rem;
+        --job-title:1rem;
+        --pagesize-height:auto;
+        --headbox-height:auto;
+        --font-size: .7rem;
+        --main-width:100vw;
+        --font-bit:.8rem;
+        --heading-size: 1.1rem;
+        --line-size: 1.1rem;
+        --white: #ffffff;
+       
+      }
+
+     
+        
+      .main
+      {
+        padding: 2rem 2rem;
+      }
+      .pagesize{
+        box-shadow:none ;
+        padding: 1.6rem 1.1rem;
+      }
+      .skills-dot li{
+        margin-top: .4rem;
+    }
+    .right{
+        min-width:28vw;
+    }
+    
+      .page1{
+        margin-top: 2rem;
+      }
+    }
+    
+    
+  
+  /* Media query for screens with width from 376px to 786px */
+  @media (min-width:668px) and (max-width: 786px) {
+    /* Styles for screens from 376px to 786px */
+    :root {
+        --pagesize-width:80vw;
+        --name:1.5rem;
+        --job-title:1rem;
+        --pagesize-height:auto;
+        --headbox-height:16.8vh;
+        --font-size: .7rem;
+        --main-width:90vw;
+        --font-bit:.8rem;
+        --heading-size: 1.1rem;
+        --line-size: 1.1rem;
+        --white: #ffffff;
+       
+      }
+      .main
+      {
+        padding: 2rem 4rem;
+      }
+    
+    .right {
+        min-width: 21vw;
+    }
+
+    .page1 .headbox{
+        margin-bottom: .7rem;
+    }
+    .skills-dot li{
+        margin-top: .5rem;
+    }
+    .company-name{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .work-name{
+        color: var(--bg-color-1);
+        font-size: .9rem;
+    }
+  }
+  
+  /* Media query for screens with width from 787px to 1024px */
+  @media (min-width: 787px) and (max-width: 1024px) {
+    /* Styles for screens from 787px to 1024px */
+    :root {
+        --pagesize-width:60vw;
+        --name:1.5rem;
+        --job-title:1rem;
+        
+        --headbox-height:16.8vh;
+        --font-size: .7rem;
+        --main-width:80vw;
+        --font-bit:.8rem;
+        --heading-size: 1.1rem;
+        --line-size: 1.1rem;
+        --white: #ffffff;
+       
+      }
+    
+    .main {
+        padding: 3rem 6rem;
+    }
+    .page1 .headbox{
+        margin-bottom: 1rem;
+    }
+
+
+
+    .skills-dot{
+        margin-left: .8rem;
+        /* background-color: #606060; */
+    }
+    .skills-dot li{
+        margin-top: .4rem;
+    }
+    .company-name{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .work-name{
+        color: var(--bg-color-1);
+        font-size: .9rem;
+    }
+    
+  }
+  
+ 
+ 
+  
+  
+  
+  
+  
