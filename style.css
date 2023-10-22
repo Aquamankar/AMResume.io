@@ -19,6 +19,7 @@
     --name:1.8rem;
     --job-title:1.1rem;
     --pagesize-height:160vh;
+    --pagesize-height-2:140vh;
     --headbox-height:16.8vh;
     --font-size: .9rem;
     --main-width:68vw;
@@ -29,7 +30,7 @@
     --black: #000000c8;
     --pure-black:#000;
     --bg-color-1: #6d59de;
-    --bg-color-2:#71d22271;
+    --bg-color-2:#c8cbe3e1;
     --shadow-color:0px 3px 8px -1px rgba(0,0,0,0.75);
   }
 
@@ -201,6 +202,7 @@ nav.sticky .menu-btn{
 .page2{
     /* margin-left: 4rem; */
     margin-top: 3rem;
+    height: var(--pagesize-height-2);
 }
 .page1 .headbox{
     background-color: var(--bg-color-1);
