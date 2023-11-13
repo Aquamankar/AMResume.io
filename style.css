@@ -382,10 +382,10 @@ margin-top: 2rem;
     :root {
         --pagesize-width:90vw;
         --name:1.3rem;
-        --job-title:.8rem;
+        --job-title:1rem;
         --pagesize-height:auto;
         --headbox-height:auto;
-        --font-size: .7rem;
+        --font-size: .9rem;
         --main-width:100vw;
         --font-bit:.8rem;
         --heading-size: 1.1rem;
@@ -467,10 +467,10 @@ nav .menu-btn,
     :root {
         --pagesize-width:90vw;
         --name:1.5rem;
-        --job-title:.9rem;
+        --job-title:1rem;
         --pagesize-height:auto;
         --headbox-height:auto;
-        --font-size: .7rem;
+        --font-size: .9rem;
         --main-width:100vw;
         --font-bit:.8rem;
         --heading-size: 1.1rem;
