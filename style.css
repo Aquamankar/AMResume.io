@@ -628,6 +628,51 @@ nav .menu-btn,
         font-size: .9rem;
     }
   }
+@media (min-width: 794px) and (max-width: 891px) {
+    :root {
+        --pagesize-width: 65vw;
+        --name: 1.5rem;
+        --job-title: 1rem;
+        --headbox-height: 16.8vh;
+        --font-size: 0.8rem;
+        --main-width: 75vw;
+        --font-bit: 0.9rem;
+        --heading-size: 1.2rem;
+        --line-size: 1.2rem;
+        --white: #ffffff;
+    }
+
+    .main {
+        padding: 3rem 5rem;
+    }
+
+    .right {
+        min-width: 22vw;
+    }
+
+    .page1 .headbox {
+        margin-bottom: 1rem;
+    }
+
+    .skills-dot {
+        margin-left: 1rem;
+    }
+
+    .skills-dot li {
+        margin-top: 0.5rem;
+    }
+
+    .company-name {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .work-name {
+        color: var(--bg-color-1);
+        font-size: 0.9rem;
+    }
+}
+
   
   /* Media query for screens with width from 787px to 1024px */
   @media (min-width: 787px) and (max-width: 1024px) {
